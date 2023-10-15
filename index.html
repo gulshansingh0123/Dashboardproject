@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+    <section class="dasboard">
+        <section class="slider">
+            <div class="left-menu">
+                <h3>dashboard</h3>
+                <ul>
+                    <li>
+                        dashboard <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </li>
+                    <li>product <span class="material-symbols-outlined">
+                            chevron_right
+                        </span></li>
+                    <li>customers <span class="material-symbols-outlined">
+                            chevron_right
+                        </span></li>
+                    <li>promote <span class="material-symbols-outlined">
+                            chevron_right
+                        </span></li>
+                    <li>help<span class="material-symbols-outlined">
+                            chevron_right
+                        </span></li>
+                </ul>
+                <div class="dwoun-card">
+                    <img src="https://www.pngfind.com/pngs/m/60-600927_thinking-man-png-free-download-transparent-background-man.png"
+                        width="50px" alt="">
+                    <div>
+                        <h4>Gulshan</h4>
+                        <p>project manager</p>
+                    </div>
+                    <span class="material-symbols-outlined">
+                        expand_more
+                    </span>
+                </div>
+
+            </div>
+            <div class="close">
+                <span class="material-symbols-outlined"> arrow_upward_alt</span>
+            </div>
+        </section>
+
+
+
+        <section class="right-wrapper">
+
+
+            <h2>Hello Gulshan</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="dollar.gif" width="50" alt="">
+                    <div class="content">
+                        <span>Earning</span>
+                        <h4>$198k</h4>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                arrow_upward_alt
+                            </span>37.8% this month</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="package.gif" width="50" alt="">
+                    <div class="content">
+                        <span>Orders</span>
+                        <h4>$2.4k</h4>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                south
+                            </span>
+                            2% this month
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="ewallet.gif" width="50" alt="">
+                    <div class="content">
+                        <span>Balance</span>
+                        <h4>$2.4k</h4>
+                        <span>
+                            <span class="material-symbols-outlined">
+                                south
+                            </span>
+                            2% this month
+                        </span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="gift-bag.gif" width="50" alt="">
+                    <div class="content">
+                        <span>Total sales</span>
+                        <h4>$198k</h4>
+                        <span><span class="material-symbols-outlined">
+                                arrow_upward_alt
+                            </span>37.8% this month</span>
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+
+                <div class="chart-container">
+                    <h4>overview</h4>
+                    <canvas id="chart"></canvas>
+
+                </div>
+                <div class="chart-container">
+
+                    <h4>customers</h4>
+                    <canvas id="chart2"></canvas>
+                </div>
+
+            </div>
+
+            <div class="product-wrapper">
+                <div class="t-content">
+                    <h2>Product Sell</h2>
+                    <div class="search-wrap">
+                        <input type="search">
+                        <p>last 30 days
+                            <span class="material-symbols-outlined">
+                                expand_more
+                            </span>
+                        </p>
+                    </div>
+                </div>
+
+
+                <hr>
+                <table border-collaspe="2px">
+                    <th colspan="2">
+                        Product name
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <th>
+                        Stock
+                    </th>
+                    <tr>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqeZ5mVbarupP8UWVic7UtumtbIyE0GY-ucQ&usqp=CAU"
+                                width="70" alt="">
+
+
+
+                        </td>
+                        <td>
+                            <h4>Abstract 3D</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                        <td class="w-100">20</td>
+                        <td class="w-100">20</td>
+                        <td class="w-100">20</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA6MLT2lpj3M85eFPT2oNNivGYx_saZEww8Q&usqp=CAU"
+                                width="70" alt="">
+
+
+
+                        </td>
+                        <td>
+                            <h4>sarphens illustration</h4>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </td>
+                        <td class="w-100">20</td>
+                        <td class="w-100">20</td>
+                        <td class="w-100">20</td>
+                    </tr>
+
+                </table>
+            </div>
+        </section>
+
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script>
+        const ctx = document.getElementById('chart');
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['jan', 'feb', 'march', 'april', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'],
+                datasets: [{
+                    label: 'Monthly Earning',
+                    data: [10, 19, 7, 5, 25, 3, 6, 8, 6, 12, 17, 5],
+
+                    borderColor: 'black',
+                    backgroundColor: ['#FF9F40', 'hotpink', '#9966FF', '#36A2EB'],
+                }],
+
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+        const ctx2 = document.getElementById('chart2');
+
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+
+                datasets: [{
+                    label: 'customers',
+                    data: [50, 15],
+                    borderWidth: 2,
+
+                    backgroundColor: ['#7549EA', '#F43698'],
+                }],
+
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                },
+                // responsive:false
+            }
+        });
+    </script>
+
+</body>
+
+</html>
