@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto, sans-serif;
+}
+
+:root {
+    background-color: rgb(238, 235, 235);
+}
+
+.dasboard {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    width: 90%;
+    overflow: hidden;
+    gap: 100px;
+    margin: auto;
+
+}
+
+.dasboard h3 {
+    font-size: 1.7rem;
+    text-transform: capitalize;
+}
+
+.dasboard .left-menu {
+    /* background-color: #040440; */
+    color: #fff;
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 100%;
+    padding: 10px;
+
+
+
+    overflow: scroll;
+}
+
+.dasboard .slider {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #040440;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.dasboard .left-menu::-webkit-scrollbar {
+    display: none;
+}
+
+.dasboard .left-menu ul {
+    margin: 300px 0;
+}
+
+.dasboard .left-menu ul li {
+    margin-bottom: 50px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 8px;
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.dasboard .left-menu ul li:hover {
+    background-color: rgba(237, 230, 230, 0.238);
+}
+
+.close {
+    position: absolute;
+    top: 50%;
+    right: -30px;
+    transform: translateY(50%);
+    background-color: rgb(238, 235, 235);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all linear 500ms;
+}
+
+.close span {
+    transform: rotate(-90deg);
+
+    font-size: 2.5rem;
+    color: black;
+
+
+}
+
+
+ul li {
+    list-style: none;
+    font-size: 1.4rem;
+}
+
+.dwoun-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(237, 230, 230, 0.238);
+    padding: 4px;
+    border-radius: 5px;
+    gap: 1rem;
+    margin: auto 0 0 0;
+}
+
+.dwoun-card p {
+    font-weight: 200;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.dwoun-card img {
+    border-radius: 50%;
+
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards .card {
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 15px 40px;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgb(192, 191, 191);
+}
+
+.right-wrapper {
+    padding: 20px 0;
+}
+
+.right-wrapper .cards {
+
+    padding-bottom: 20px;
+    gap: 20px;
+}
+
+.right-wrapper h2 {
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+}
+
+.chart-container {
+    width: 50%;
+    height: 300px;
+
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* .chart-container:last-child {} */
+
+.charts {
+    display: flex;
+
+    gap: 3rem;
+}
+
+.content .material-symbols-outlined {
+    color: red;
+    font-size: 14px;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+
+.content span {
+    font-size: 14px;
+    color: rgb(111, 109, 109);
+}
+
+.product-wrapper {
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 16px;
+}
+
+.product-wrapper .t-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.search-wrap {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.search-wrap input {
+    padding: 0 5px;
+}
+
+.product-wrapper .t-content {
+    margin-bottom: 10px;
+}
+
+.product-wrapper .t-content p {
+    background-color: rgba(255, 251, 251, 0.947);
+    box-shadow: 0 0 10px rgb(222, 219, 219);
+    padding: 5px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.product-wrapper .t-content h2 {
+    margin: unset;
+}
+
+.product-wrapper ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+
+}
+
+.product-wrapper ul li {
+    font-size: 16px;
+    /* color: rgb(209, 205, 205); */
+}
+
+.gap {
+    gap: 5rem;
+}
+
+.product-wrapper p .material-symbols-outlined {
+    font-size: 18px;
+}
+
+table {
+    width: 100%;
+border: 1px solid #ddd;
+border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table img {
+    border-radius: 5px;
+}
+
+table td,
+table th {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+.w-100 {
+
+    text-align: center;
+}
+
+@media(max-width:1800px) {
+
+    .dasboard .slider {
+        left: -240px;
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 500ms;
+    }
+}
+
+@media(max-width:1200px) {
+
+    .charts,
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cards .card{
+        max-width: 260px;
+    width: 100%;
+    }
+}
+
+
+/* js class */
+.dasboard .left-0 {
+    left: 0;
+}
+.rotate{
+    transform: rotate(181deg) ;
+}
